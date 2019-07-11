@@ -12,5 +12,6 @@ else
 fi
 _new_user=`git config --global user.name`
 echo "切换Git用户${_new_user}结束"
+#防止窗口自动关闭
 ping -c 3 192.168.18.1
 exec /bin/bash
